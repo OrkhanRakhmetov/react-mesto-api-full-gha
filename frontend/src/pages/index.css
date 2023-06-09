@@ -1,0 +1,82 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+
+/*Общие стили*/
+@import url(../blocks/page/page.css);
+
+/*Header*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__link/header__link-logout.css);
+@import url(../blocks/header/__email/header__email.css);
+
+/*body*/
+@import url(../blocks/content/content.css);
+
+/*Profile*/
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__container/profile__container.css);
+@import url(../blocks/profile/__avatar/profile__avatar-button.css);
+@import url(../blocks/profile/__avatar/profile__avatar.css);
+@import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__info-name/profile__info-name.css);
+@import url(../blocks/profile/__title/profile__title.css);
+@import url(../blocks/profile/__edit-button/profile__edit-button.css);
+@import url(../blocks/profile/__subtitle/profile__subtitle.css);
+@import url(../blocks/profile/__add-button/profile__add-button.css);
+
+/*Elements*/
+@import url(../blocks/elements/elements.css);
+@import url(../blocks/elements/__list/elements__list.css);
+@import url(../blocks/element/element.css);
+@import url(../blocks/element/__button-img/element__button-img.css);
+@import url(../blocks/element/__img/element__img.css);
+@import url(../blocks/element/__desc/element__desc.css);
+@import url(../blocks/element/__title/element__title.css);
+@import url(../blocks/element/__heart/element__heart-block.css);
+@import url(../blocks/element/__heart/element__heart.css);
+@import url(../blocks/element/__number_of-likes/element__number_of-likes.css);
+@import url(../blocks/element/_heart-active/element_heart-active.css);
+@import url(../blocks/element/__delete/element__delete.css);
+@import url(../blocks/element/__delete/_hidden/element__delete_hidden.css);
+
+/*Footer*/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__text/footer__text.css);
+
+/*Popup*/
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__container/popup__container_avatar.css);
+@import url(../blocks/popup/__container/popup__container_confirm.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__inputs/popup__inputs.css);
+@import url(../blocks/popup/__inputs/_add-img/popup__inputs_add-img.css);
+@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__input/_type_name/popup__input_type_name.css);
+@import url(../blocks/popup/__input/_type_job/popup__input_type_job.css);
+@import url(../blocks/popup/__input/popup__input-error.css);
+@import url(../blocks/popup/__error/popup__error_visible.css);
+@import url(../blocks/popup/__input/popup__input_type_error.css);
+@import url(../blocks/popup/__button/popup__button.css);
+@import url(../blocks/popup/__button/popup__button_add.css);
+@import url(../blocks/popup/__button/popup__button_disabled.css);
+@import url(../blocks/popup/__button/popup__button_confirm.css);
+@import url(../blocks/popup/__close/popup__close.css);
+@import url(../blocks/popup/__img-desc/popup__img-desc.css);
+@import url(../blocks/popup/_active/popup_active.css);
+@import url(../blocks/popup/_img_enlarge/popup_img_enlarge.css);
+@import url(../blocks/popup/__enlarge-container/popup__enlarge-container.css);
+@import url(../blocks/popup/__big-img/popup__big-img.css);
+@import url(../blocks/popup/__success/popup__success.css);
+@import url(../blocks/popup/__success-image/popup__success-image.css);
+@import url(../blocks/popup/__success-text/popup__success-text.css);
+
+/*Authentication*/
+@import url(../blocks/auth/auth.css);
+@import url(../blocks/auth/__input/auth__input.css);
+@import url(../blocks/auth/__subtitle/auth__subtitle.css);
+@import url(../blocks/auth/__title/auth__title.css);
+@import url(../blocks/auth/__button/auth__button.css);
+@import url(../blocks/auth/__enter/auth__enter.css);

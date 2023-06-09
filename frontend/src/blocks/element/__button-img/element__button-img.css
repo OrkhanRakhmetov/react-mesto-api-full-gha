@@ -1,0 +1,7 @@
+.element__button-img{
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}

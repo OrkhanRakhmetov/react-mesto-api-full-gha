@@ -1,0 +1,16 @@
+.auth__enter {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+
+  padding-left: 5px;
+
+  transition: opacity .3s ease-in;
+}
+
+.auth__enter:hover {
+  /* color: #FFFFFF; */
+  opacity: .6;
+}
