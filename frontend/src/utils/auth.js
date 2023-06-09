@@ -1,5 +1,6 @@
 const authApi = {
-  baseUrl: 'https://auth.nomoreparties.co',
+  // baseUrl: 'https://auth.nomoreparties.co',
+  baseUrl: 'http://localhost:3001',
   headers: {
     'Content-Type': 'application/json',
   }
@@ -7,11 +8,10 @@ const authApi = {
 
 class Auth {
   constructor({ authApi }) {
-    this._baseUrl = 'http://localhost:3001';
+    this._baseUrl = authApi.baseUrl;
     this._headers = authApi.headers;
-    console.log(authApi.headers);
+    console.log(authApi.baseUrl);
   }
-
 
   _getResponse(res) {
     if (res.ok) {
