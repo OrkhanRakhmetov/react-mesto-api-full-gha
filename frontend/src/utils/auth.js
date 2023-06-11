@@ -1,6 +1,6 @@
 const authApi = {
-  // baseUrl: 'https://auth.nomoreparties.co',
-  baseUrl: 'http://localhost:3001',
+  baseUrl: 'https://mesto-15.nomoredomains.rocks',
+  // baseUrl: 'http://localhost:3001',
   headers: {
     'Content-Type': 'application/json',
   }

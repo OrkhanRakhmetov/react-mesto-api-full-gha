@@ -9,6 +9,8 @@ const RegExp = /^https?:\/\/[a-zA-Z0-9-._~:/?#[\]@!$&'()*+,;=]+\.[a-zA-Z0-9-._~:
 const {
   PORT = 3000,
   DB_ADDRESS = 'mongodb://127.0.0.1:27017/mestodb',
+  NODE_ENV,
+  JWT_SECRET,
 } = process.env;
 
 module.exports = {
@@ -20,4 +22,6 @@ module.exports = {
   PORT,
   DB_ADDRESS,
   RegExp,
+  NODE_ENV,
+  JWT_SECRET,
 };
