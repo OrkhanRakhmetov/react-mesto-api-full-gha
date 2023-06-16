@@ -4,7 +4,7 @@ import CurrentUserContext from "../contexts/CurrentUserContext";
 
 
 function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick, cards, onCardLike, onCardDelete }) {
-  
+
   const currentUser = useContext(CurrentUserContext);
 
   return (
@@ -31,15 +31,18 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick, cards, onC
       <section className="elements">
 
         <ul className="elements__list">
-          {cards.map(card => (
-            <Card
-              card={card}
-              key={card._id}
-              onCardClick={onCardClick}
-              onCardLike={onCardLike}
-              onCardDelete={onCardDelete}
-            />
-          ))}
+          {cards.map(card => {
+            return (
+              <Card
+                card={card}
+                key={card._id}
+                onCardClick={onCardClick}
+                onCardLike={onCardLike}
+                onCardDelete={onCardDelete}
+              />
+            )
+          })}
+
         </ul>
 
       </section>
