@@ -1,5 +1,6 @@
 const authApi = {
   baseUrl: 'https://api.mesto-15.nomoredomains.rocks',
+  // baseUrl: 'http://localhost:3001',
   headers: {
     'Content-Type': 'application/json',
   }
