@@ -7,7 +7,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.2.9
+IP 51.250.2.9
 
 Frontend https://mesto-15.nomoredomains.rocks
 
