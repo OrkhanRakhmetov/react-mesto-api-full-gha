@@ -81,7 +81,7 @@ module.exports.updateAvatar = (req, res, next) => {
 
   User.findByIdAndUpdate(userId, { avatar }, { runValidators: true, new: true })
     .then((user) => {
-      res.status(200).send({ data: user });
+      res.send(user);
     })
     .catch((err) => {
       if (err.name === 'ValidationError') {
@@ -97,9 +97,10 @@ module.exports.login = (req, res, next) => {
   return User.findUserByCredentials(email, password)
     .then((user) => {
       const token = jwt.sign({ _id: user._id }, NODE_ENV === 'production' ? JWT_SECRET : 'super-strong-secret-key', { expiresIn: '7d' });
-      return res.status(200).cookie('jwt', token, {
+      return res.cookie('jwt', token, {
         maxAge: 3600000 * 24 * 7,
         httpOnly: true,
+        sameSite: 'none',
       })
         .send({ message: 'Авторизация прошла успешно' });
     })
@@ -107,5 +108,5 @@ module.exports.login = (req, res, next) => {
 };
 
 module.exports.logout = (req, res) => {
-  res.clearCookie('jwt', { httpOnly: true }).send({ message: 'Выход произведен' });
+  res.clearCookie('jwt', { httpOnly: true, sameSite: 'none' }).send({ message: 'Выход произведен' });
 };

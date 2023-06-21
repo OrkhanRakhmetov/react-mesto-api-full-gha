@@ -46,12 +46,12 @@ class Auth {
       .then(res => this._getResponse(res))
   }
 
-  signOut() {    
+  signOut() {
     return fetch(this._baseUrl + '/signout', {
       method: 'POST',
       credentials: 'include'
-      })
-    }
+    })
+  }
 
 }
 
