@@ -1,2 +1,0 @@
-NODE_ENV = production
-JWT_SECRET = ee7b54e52077f1a335d4dbceddb82982d43f8746217324cc479e0bcbf27f4fcc

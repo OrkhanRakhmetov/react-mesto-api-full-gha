@@ -2,7 +2,6 @@ export class Api {
   constructor(options) {
     this._baseUrl = 'https://api.mesto-15.nomoredomains.rocks';
     // this._baseUrl = 'http://localhost:3001';
-
     this._headers = options.headers;
   }
 
