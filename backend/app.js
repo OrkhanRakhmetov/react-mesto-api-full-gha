@@ -19,11 +19,11 @@ mongoose.connect(DB_ADDRESS, {
   useNewUrlParser: true,
 });
 
+app.use(helmet());
 app.use(express.json());
 app.use(cookieParser());
 app.use(requestLogger);
 app.use(limiter);
-app.use(helmet());
 app.use(cors);
 
 app.get('/crash-test', () => {
