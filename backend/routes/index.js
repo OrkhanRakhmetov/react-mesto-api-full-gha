@@ -12,10 +12,11 @@ const {
 
 const NotFoundError = require('../errors/NotFoundError');
 
-const { createUser, login } = require('../controllers/users');
+const { createUser, login, logout } = require('../controllers/users');
 
 router.post('/signup', validatorCreateUser, createUser);
 router.post('/signin', validatorLogin, login);
+router.post('/signout', auth, logout);
 router.use('/users', auth, userRouter);
 router.use('/cards', auth, cardRouter);
 
